@@ -1,3 +1,74 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --ModerateBlue: hsl(238, 40%, 52%);
+  --SoftRed: hsl(358, 79%, 66%);
+  --LightGrayishBlue: hsl(239, 57%, 85%);
+  --PaleRed: hsl(357, 100%, 86%);
+
+  /* Neutral */
+
+  --DarkBlue: hsl(212, 24%, 26%);
+  --GrayishBlue: hsl(211, 10%, 45%);
+  --LightGray: hsl(223, 19%, 93%);
+  --VeryLightGray: hsl(228, 33%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--VeryLightGray);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+main {
+  margin: 30px 10px;
+}
+
+.addCommentSection {
+  background-color: var(--White);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+textarea {
+  font-family: 'Rubik', sans-serif;
+  height: 90px;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--LightGray);
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.profile {
+  height: 40px;
+}
+
+.submit-button {
+  height: 100%;
+  width: 110px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: var(--ModerateBlue);
+  color: var(--LightGray);
+}
 
 .attribution {
   font-size: 11px;

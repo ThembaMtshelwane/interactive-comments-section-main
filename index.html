@@ -10,13 +10,22 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
 
     <title>Frontend Mentor | Interactive comments section</title>
   </head>
   <body>
-
+    <main>
+      <section class="allCommentsSection"></section>
+      <form class="addCommentSection">
+        <textarea name="addedComment" id="addedComment" placeholder="Add a comment..."></textarea>
+        <section class="profile-button">
+          <img class="profile" src="./images/avatars/image-juliusomo.png" alt="juliusomo" />
+          <button class="submit-button" type="submit">SEND</button>
+        </section>
+      </form>
     </main>
     <footer class="attribution">
       Challenge by
