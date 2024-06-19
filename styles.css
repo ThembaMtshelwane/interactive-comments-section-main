@@ -27,6 +27,7 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  color: var(--GrayishBlue);
 }
 
 main {
@@ -72,9 +73,10 @@ textarea {
 }
 
 .userComment {
-  border: 2px solid;
   background-color: var(--White);
   padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
 }
 
 .topSection,
@@ -84,14 +86,29 @@ textarea {
 }
 
 .topSection {
-  border: 2px solid;
+  /* border: 2px solid; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.username {
+  font-weight: 700;
+  color: var(--DarkBlue);
+}
+
+.currentUser{
+  background-color: var(--ModerateBlue);
+  color: var(--White);
+  padding: 5px;
+  border-radius: 5px;
+}
 
 .middleSection {
-  border: 2px solid;
+  /* border: 2px solid; */
+}
+
+.comment {
+  line-height: 1.5rem;
 }
 
 .bottomSection {
@@ -142,13 +159,13 @@ textarea {
 }
 
 .delete,
-.edit {
+.edit,.reply {
   color: var(--SoftRed);
   font-weight: 700;
   font-size: 1.01rem;
 }
 
-.edit {
+.edit,.reply {
   color: var(--ModerateBlue);
 }
 
