@@ -10,7 +10,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
 
@@ -18,11 +21,78 @@
   </head>
   <body>
     <main>
-      <section class="allCommentsSection"></section>
+      <section class="allCommentsSection">
+        <section id="desktop-UserComment">
+          <section class="userComment">
+            <section class="desktop-topSection">
+              <section class="topSection">
+                <img
+                  class="profile"
+                  src="./images/avatars/image-juliusomo.png"
+                  alt="juliusomo"
+                />
+                <p class="username">juliusomo</p>
+                <p class="currentUser">you</p>
+                <p class="date">2 days ago</p>
+              </section>
+            </section>
+
+            <section class="middleSection">
+              <p class="comment">
+                <span class="replyTo">@ramsesmiron</span>
+                I couldn't agree more with this. Everything moves so fast and it
+                always seems like everyone knows the newest library/framework.
+                But the fundamentals are what stay constant."
+              </p>
+            </section>
+            <section class="bottomSection">
+              <section class="scoreContainer">
+                <button class="plusButton">
+                  <img
+                    src="./images/icon-plus.svg"
+                    alt="plus"
+                    class="plusIcon"
+                  />
+                </button>
+                <section class="score">2</section>
+                <button class="minusButton">
+                  <img
+                    src="./images/icon-minus.svg"
+                    alt="minus"
+                    class="minusIcon"
+                  />
+                </button>
+              </section>
+              <section class="actionContainer">
+                <button class="delete actionButton">
+                  <img src="./images/icon-delete.svg" alt="delete" />
+                  <p>Delete</p>
+                </button>
+                <button class="edit actionButton">
+                  <img src="./images/icon-edit.svg" alt="edit" />
+                  <p>Edit</p>
+                </button>
+                <!-- <button class="reply actionButton">
+                  <img src="./images/icon-reply.svg" alt="reply" />
+                <p>Reply</p>
+                </button> -->
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
       <form class="addCommentSection">
-        <textarea name="addedComment" id="addedComment" placeholder="Add a comment..."></textarea>
+        <textarea
+          name="addedComment"
+          id="addedComment"
+          placeholder="Add a comment..."
+        ></textarea>
         <section class="profile-button">
-          <img class="profile" src="./images/avatars/image-juliusomo.png" alt="juliusomo" />
+          <img
+            class="profile"
+            src="./images/avatars/image-juliusomo.png"
+            alt="juliusomo"
+          />
           <button class="submit-button" type="submit">SEND</button>
         </section>
       </form>

@@ -26,6 +26,7 @@ body {
   background-color: var(--VeryLightGray);
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+  font-size: 16px;
 }
 
 main {
@@ -68,6 +69,87 @@ textarea {
   font-size: 1.1rem;
   background-color: var(--ModerateBlue);
   color: var(--LightGray);
+}
+
+.userComment {
+  border: 2px solid;
+  background-color: var(--White);
+  padding: 20px;
+}
+
+.topSection,
+.middleSection,
+.bottomSection {
+  margin-bottom: 10px;
+}
+
+.topSection {
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middleSection {
+  border: 2px solid;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.scoreContainer {
+  border-radius: 5px;
+  background-color: var(--LightGray);
+  display: flex;
+  width: 100px;
+  height: 80%;
+}
+
+.plusButton,
+.score,
+.minusButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.score,
+.minusButton {
+  color: var(--ModerateBlue);
+  font-weight: 500;
+}
+
+.actionContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.actionButton {
+  width: 75px;
+  height: 100%;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+}
+
+.delete,
+.edit {
+  color: var(--SoftRed);
+  font-weight: 700;
+  font-size: 1.01rem;
+}
+
+.edit {
+  color: var(--ModerateBlue);
 }
 
 .attribution {
